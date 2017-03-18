@@ -1,0 +1,80 @@
+languageCode = "en-us"
+title = "Crab"
+theme = "crab"
+baseurl = "https://example.com"
+
+[params]
+description = "A clean Hugo theme for websites"
+
+[[menu.main]]
+weight = 1
+name = "Home"
+url = "/"
+
+[[menu.main]]
+weight = 2
+name = "Features"
+url = "/features/"
+identifier = "features"
+  [[menu.main]]
+  parent = "features"
+  weight = 1
+  name = "Responsive design"
+  url = "/features/responsive-design/"
+  [[menu.main]]
+  parent = "features"
+  weight = 2
+  name = "Nested menus"
+  url = "/features/nested-menus/"
+  identifier = "nested-menus"
+    [[menu.main]]
+    parent = "nested-menus"
+    weight = 1
+    name = "Third level page #1"
+    url = "/features/nested-menus/third-level-1/"
+    [[menu.main]]
+    parent = "nested-menus"
+    weight = 2
+    name = "Third level page #2"
+    url = "/features/nested-menus/third-level-2/"
+    [[menu.main]]
+    parent = "nested-menus"
+    weight = 3
+    name = "Third level page #3"
+    url = "/features/nested-menus/third-level-3/"
+  [[menu.main]]
+  parent = "features"
+  weight = 3
+  name = "Two-column layout"
+  url = "/features/two-column-layout/"
+
+[[menu.main]]
+weight = 3
+name = "Another item"
+url = "/another/"
+
+[[menu.main]]
+weight = 4
+name = "More items"
+url = "/more/"
+identifier = "more"
+  [[menu.main]]
+  parent = "more"
+  weight = 1
+  name = "Some more menu"
+  url = "/more/some-more-menu/"
+  [[menu.main]]
+  parent = "more"
+  weight = 2
+  name = "items to show"
+  url = "/more/items-to-show/"
+  [[menu.main]]
+  parent = "more"
+  weight = 3
+  name = "the nested menus feature"
+  url = "/more/the-nested-menus-feature/"
+
+[[menu.main]]
+weight = 5
+name = "Contact"
+url = "/contact/"

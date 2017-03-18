@@ -1,0 +1,12 @@
+name = "Crab"
+license = "MIT"
+licenselink = "https://github.com/thomasheller/crab/blob/master/LICENSE.md"
+description = "A clean Hugo theme for websites"
+homepage = "https://github.com/thomasheller/crab"
+tags = ["clean"]
+features = ["responsive", "404"]
+min_version = 0.18
+
+[author]
+name = "Thomas Heller"
+homepage = "https://github.com/thomasheller"

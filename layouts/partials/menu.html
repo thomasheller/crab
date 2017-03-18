@@ -1,0 +1,23 @@
+      <nav>
+	<ul class="first">
+          {{ range . }}
+            <li><a href="{{.URL}}">{{ .Name }}{{ if .HasChildren }} &raquo;{{ end }}</a>
+	    {{ if .HasChildren }}
+	      <ul class="second">
+	      {{ range .Children }}
+                <li><a href="{{.URL}}">{{ .Name }}{{ if .HasChildren }} &raquo;{{ end }}</a>
+		  {{ if .HasChildren }}
+		    <ul class="third">
+		    {{ range .Children }}
+		      <li><a href="{{.URL}}">{{ .Name }}</a></li>
+		    {{ end }}
+		    </ul>
+		  {{ end }}
+		</li>
+	      {{ end }}
+	      </ul>
+	    {{ end }}
+	    </li>
+	  {{ end }}
+	</ul>
+      </nav>

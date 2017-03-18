@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/crab.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+    {{ .Hugo.Generator }}
+  </head>
+  <body>
+
+    <div id="container">
+
+      <div id="header">
+
+	<div id="site-logo">
+	  <img src="{{ .Site.BaseURL }}img/crab-logo.png">
+        </div>
+
+	<div id="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
+	<div id="site-slogan">{{ .Site.Params.Description }}</div>
+
+      </div>
+
+      {{ partial "menu.html" .Site.Menus.main }}
+
+      <div id="content">
+
+        <div id="article">
+	  <h1>{{ .Title }}</h1>
