@@ -21,14 +21,14 @@ theme.
 In your Hugo site's folder:
 
 ```sh
-$ git clone https://github.com/thomasheller/crab themes/dimension
+$ git clone https://github.com/thomasheller/crab themes/crab
 ```
 
 Alternatively, if your site is in a git repository, you can use git
 submodules:
 
 ```sh
-$ git submodule add https://github.com/thomasheller/crab themes/dimension
+$ git submodule add https://github.com/thomasheller/crab themes/crab
 ```
 
 To update the theme to the latest version, simply pull in the changes:
