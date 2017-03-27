@@ -74,6 +74,12 @@ This appears in the sidebar. *Markdown* is supported!
 {{% /summary %}}
 ```
 
+## Preview
+
+If you'd like to get a live demo of the Crab theme locally, you could
+clone the repository, cd to the `exampleSite` directory and run
+`HUGO_THEMESDIR=../.. hugo serve -t crab` from there.
+
 ## Contact
 
 If you think anything could be improved about the Crab theme, feel
