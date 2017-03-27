@@ -11,6 +11,13 @@ site generator.
 - nested menus
 - two-column
 
+## Preview
+
+If you'd like to get a live demo of the Crab theme locally, you could
+clone the repository, cd to the `exampleSite` directory and run
+`HUGO_THEMESDIR=../.. hugo serve -t crab` from there (assuming
+[Hugo](http://gohugo.io) is already installed).
+
 ## Installation
 
 Read the [Hugo Quickstart
@@ -73,12 +80,6 @@ file, the summary will appear in the right column:
 This appears in the sidebar. *Markdown* is supported!
 {{% /summary %}}
 ```
-
-## Preview
-
-If you'd like to get a live demo of the Crab theme locally, you could
-clone the repository, cd to the `exampleSite` directory and run
-`HUGO_THEMESDIR=../.. hugo serve -t crab` from there.
 
 ## Contact
 
