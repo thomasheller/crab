@@ -10,6 +10,8 @@ site generator.
 - responsive
 - nested menus
 - two-column
+- tag support
+- blog articles
 
 ## Preview
 

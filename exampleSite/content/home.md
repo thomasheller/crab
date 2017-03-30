@@ -8,7 +8,8 @@ draft = false
 {{% summary %}}
 Summary:
 Crab is a clean Hugo theme for websites. Its features include
-responsiveness, nested menu support and two-column layout.
+responsiveness, nested menu support, two-column layout, tag and blog
+article support.
 {{% /summary %}}
 
 Welcome to Crab! Crab is a clean Hugo theme for websites.
@@ -18,6 +19,8 @@ Some of its features:
 - Responsive design -- view it on mobile
 - Nested menus -- try the menu above
 - Two-column layout
+- Tags
+- Blog articles
 
 A very popular quote:
 

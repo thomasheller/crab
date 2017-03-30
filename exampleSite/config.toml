@@ -6,6 +6,12 @@ baseurl = "https://example.com"
 [params]
 description = "A clean Hugo theme for websites"
 
+[permalinks]
+blog  = "/blog/:year/:month/:title/"
+
+[taxonomies]
+tags = "tags"
+
 [[menu.main]]
 weight = 1
 name = "Home"
@@ -47,6 +53,11 @@ identifier = "features"
   weight = 3
   name = "Two-column layout"
   url = "/features/two-column-layout/"
+  [[menu.main]]
+  parent = "features"
+  weight = 4
+  name = "Tags"
+  url = "/features/tags/"
 
 [[menu.main]]
 weight = 3
@@ -76,5 +87,10 @@ identifier = "more"
 
 [[menu.main]]
 weight = 5
+name = "Blog"
+url = "/blog/"
+
+[[menu.main]]
+weight = 6
 name = "Contact"
 url = "/contact/"

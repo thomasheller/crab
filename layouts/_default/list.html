@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+
+{{ if hasPrefix .URL "/blog/" }}
+
+  {{ range sort .Paginator.Pages }}
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p class="timestamp">{{ .Date.Format "January 2, 2006" }}</p>
+    <div class="content">
+    {{ .Summary | plainify | safeHTML }}
+    {{ if .Truncated }}
+      ... <a href="{{ .Permalink }}">Read more &hellip;</a>
+    {{ end }}
+    </div>
+    {{ if .Params.tags }}
+      {{ partial "tags" .Params.tags }}
+    {{ end }}
+  {{ end }}
+  {{ partial "pagination.html" . }}
+
+{{ end }}
+
+{{ partial "footer.html" . }}
