@@ -83,6 +83,36 @@ This appears in the sidebar. *Markdown* is supported!
 {{% /summary %}}
 ```
 
+## Tags
+
+Tags are supported as [taxonomies described in the Hugo
+manual](https://gohugo.io/taxonomies/usage/). Make sure your config
+file contains a proper `taxonomies` declaration, like in the
+`exampleSite/config.toml`. You can then put tags in the front matter
+as usual:
+
+```
++++
+title = "A Page With Tags"
+tags = [ "Hugo", "theme", "Crab" ]
+...
+```
+
+Tags will appear both on regular (fixed, static) pages as well as for
+blog posts, although they are probably more commonly used with blog
+posts.
+
+## Blog
+
+Blog posts are intended to be created in the special directory
+`/blog/`. The main difference about blog articles is that the layout
+includes the timestamp when they were published (fixed pages don't
+show a timestamp by default) and that they appear in the list of blog
+articles.
+
+The `exampleSites/config.toml` shows the kind of `permalinks`
+declaration required to generate blog posts in the correct place.
+
 ## Contact
 
 If you think anything could be improved about the Crab theme, feel
