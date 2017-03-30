@@ -3,7 +3,7 @@
 Crab is a clean website theme for the [Hugo](https://gohugo.io) static
 site generator.
 
-![Crab theme screenshot](https://raw.githubusercontent.com/thomasheller/crab/master/images/tn.png)
+![Crab theme screenshot](https://raw.githubusercontent.com/thomasheller/crab/master/images/screenshot.png)
 
 ## Features
 
