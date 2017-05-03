@@ -113,6 +113,12 @@ articles.
 The `exampleSites/config.toml` shows the kind of `permalinks`
 declaration required to generate blog posts in the correct place.
 
+## Logo
+
+To change the logo of the crab to your own customised image,
+add `logoimage` to `config.toml`, where `logoimage` is the
+path inside your site's `static` directory.
+
 ## Contact
 
 If you think anything could be improved about the Crab theme, feel
