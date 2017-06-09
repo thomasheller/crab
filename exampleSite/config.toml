@@ -5,6 +5,7 @@ baseurl = "https://example.com"
 
 [params]
 description = "A clean Hugo theme for websites"
+# logoimage = "images/logo.jpg"
 
 [permalinks]
 blog  = "/blog/:year/:month/:title/"

@@ -12,8 +12,12 @@
 
       <div id="header">
 
-	<div id="site-logo">
-	  <img src="{{ .Site.BaseURL }}img/crab-logo.png">
+        <div id="site-logo">
+          {{ if isset .Site.Params "logoimage" }}
+            <img src="{{ .Site.BaseURL }}{{ .Site.Params.logoimage }}">
+          {{ else }}
+            <img src="{{ .Site.BaseURL }}img/crab-logo.png">
+          {{ end }}
         </div>
 
 	<div id="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
