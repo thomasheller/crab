@@ -5,6 +5,14 @@
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/crab.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
     {{ .Hugo.Generator }}
+
+
+
+    {{ if isset .Site.Params "mathjax"}}
+    <script type="text/javascript" src="{{ .Site.Params.mathjax }}">
+    </script>
+    {{end}}
+
   </head>
   <body>
 
