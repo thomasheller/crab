@@ -6,6 +6,12 @@ baseurl = "https://example.com"
 [params]
 description = "A clean Hugo theme for websites"
 # logoimage = "images/logo.jpg"
+# copyright = "foo"
+
+# mathjax = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+## Uncomment if you want mathjax enabled. The above cdn source is taken from https://gohugo.io/content-management/formats/#mathjax-with-hugo   
+
+
 
 [permalinks]
 blog  = "/blog/:year/:month/:title/"
