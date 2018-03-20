@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-{{ if or (in .URL "blog") (in .URL "tags") }}
+{{ if or (in .URL "blog") (in .URL "tags") (in .URL "posts") }}
 
 {{ range sort .Paginator.Pages }}
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
