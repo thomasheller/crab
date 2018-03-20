@@ -148,6 +148,10 @@ span.upper {
   text-transform: uppercase;
 }
 
+img {
+  max-width: 100%;
+}
+ 
 img.right {
   float: right;
   margin: 0 0 1em 1em;
