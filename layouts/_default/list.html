@@ -1,5 +1,7 @@
 {{ partial "header.html" . }}
 
+{{ if or (hasPrefix .URL "/blog/") (in .URL "tags") }}
+
 {{ range sort .Paginator.Pages }}
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <p class="timestamp">{{ .Date.Format "January 2, 2006" }}</p>
@@ -12,13 +14,11 @@
                <div style="color:grey; font-size:16px;">
                  {{ if .Params.tags }}<strong>Tags:</strong>
                  {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-                 
-                 {{end}}
-                 
-                 {{end}}
+                 {{ end }}
+                 {{ end }}
                </div>
     </div>
-
+{{ end }}
 {{ end }}
 
 {{ partial "footer" . }}
