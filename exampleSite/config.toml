@@ -4,6 +4,7 @@ theme = "crab"
 baseurl = "https://example.com"
 
 [params]
+mainSections = ["blog"]
 description = "A clean Hugo theme for websites"
 # logoimage = "images/logo.jpg"
 # copyright = "foo"
