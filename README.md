@@ -67,7 +67,9 @@ You may have multiple folders by adding a comma, space, then the
 quation marks. So a mainSections with both ABC, and XYZ as folders
 would look like this:
 
-'mainSections = ["ABC", "XYZ"]'
+'''sh
+mainSections = ["ABC", "XYZ"]
+'''
 
 By default, mainSections is set to use the 'blog' folder in the
 exampleSite folder
