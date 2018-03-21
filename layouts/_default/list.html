@@ -7,14 +7,13 @@
     {{ .Summary | plainify | safeHTML }}
     {{ if .Truncated }}
       ... <a href="{{ .Permalink }}">Read more &hellip;</a>
-               {{ end }}
-               </div>
-               <div style="color:grey; font-size:16px;">
-                 {{ if .Params.tags }}<strong>Tags:</strong>
-                 {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-                 {{ end }}
-                 {{ end }}
-               </div>
+    {{ end }}
+    </div>
+    <div style="color:grey; font-size:16px;">
+      {{ if .Params.tags }}
+        {{ partial "tags" .Params.tags }}
+      {{ end }}
+      {{ end }}
     </div>
 {{ end }}
 
