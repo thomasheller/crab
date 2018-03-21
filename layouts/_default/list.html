@@ -1,8 +1,6 @@
 {{ partial "header.html" . }}
 
-{{ if or (in .URL "blog") (in .URL "tags") (in .URL "posts") (in .URL "post") }}
-
-{{ range sort .Paginator.Pages }}
+{{ range where (.Paginator 10).Pages "Type" "in" .Site.Params.mainSections }}
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <p class="timestamp">{{ .Date.Format "January 2, 2006" }}</p>
     <div class="content">
@@ -18,7 +16,6 @@
                  {{ end }}
                </div>
     </div>
-{{ end }}
 {{ end }}
 
 {{ partial "footer" . }}
