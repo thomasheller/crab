@@ -4,6 +4,6 @@
 {{ end }}
 {{ .Content }}
 {{ if .Params.tags }}
-  {{ partial "tags" .Params.tags }}
+  {{ partial "tags" . }}
 {{ end }}
 {{ partial "footer.html" . }}
