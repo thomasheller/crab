@@ -11,7 +11,7 @@
     </div>
     <div style="color:grey; font-size:16px;">
       {{ if .Params.tags }}
-        {{ partial "tags" .Params.tags }}
+        {{ partial "tags" . }}
       {{ end }}
     </div>
 {{ end }}
