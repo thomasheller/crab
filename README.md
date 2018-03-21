@@ -71,8 +71,8 @@ would look like this:
 mainSections = ["ABC", "XYZ"]
 ```
 
-By default, mainSections is set to use the 'blog' folder in the
-exampleSite folder
+By default, mainSections is set to use the `blog` folder and the 
+`tags` folder in the exampleSite folder
 
 ## Menus
 
