@@ -58,6 +58,20 @@ get a preview of your Hugo site as usual:
 $ hugo serve -t crab
 ```
 
+Pagination with automatically use the folder with the most files in it 
+if you do not set your mainSections (Meaning it will treat it like the
+blog folder with tags enabled). If you want to set a custom folder, 
+please Add 'mainSections = [""]' under '[params]' in 'config.toml'
+and insert the wanted folder's name in between the quotation marks.
+You may have multiple folders by adding a comma, space, then the
+quation marks. So a mainSections with both ABC, and XYZ as folders
+would look like this:
+
+'mainSections = ["ABC", "XYZ"]'
+
+By default, mainSections is set to use the 'blog' folder in the
+exampleSite folder
+
 ## Menus
 
 See the `exampleSite/config.toml` file for how the menus can be
