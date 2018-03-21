@@ -72,7 +72,7 @@ mainSections = ["ABC", "XYZ"]
 ```
 
 By default, mainSections is set to use the `blog` folder and the 
-`tags` folder in the exampleSite folder
+`features` folder in the exampleSite folder
 
 ## Menus
 
