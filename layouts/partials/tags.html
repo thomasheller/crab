@@ -1,5 +1,6 @@
 <p class="tags">
-  Tags: {{ range . }}
-  <a href="{{ "/tags/" | absURL }}{{ . | urlize | lower }}">{{ . }}</a>
+  <strong>Tags:</strong>
+  {{range .Params.tags}}
+  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
   {{ end }}
 </p>
