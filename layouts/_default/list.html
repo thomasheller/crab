@@ -1,19 +1,21 @@
 {{ partial "header.html" . }}
 
 {{ range where (.Paginator 10).Pages "Type" "in" .Site.Params.mainSections }}
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <p class="timestamp">{{ .Date.Format "January 2, 2006" }}</p>
-    <div class="content">
-    {{ .Summary | plainify | safeHTML }}
-    {{ if .Truncated }}
-      ... <a href="{{ .Permalink }}">Read more &hellip;</a>
+  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  <p class="timestamp">{{ .Date.Format "January 2, 2006" }}</p>
+  <div class="content">
+  {{ .Summary | plainify | safeHTML }}
+  {{ if .Truncated }}
+    ... <a href="{{ .Permalink }}">Read more &hellip;</a>
+  {{ end }}
+  </div>
+  <div style="color:grey; font-size:16px;">
+    {{ if .Params.tags }}
+      {{ partial "tags" . }}
     {{ end }}
-    </div>
-    <div style="color:grey; font-size:16px;">
-      {{ if .Params.tags }}
-        {{ partial "tags" . }}
-      {{ end }}
-    </div>
+  </div>
 {{ end }}
+
+{{ template "_internal/pagination.html" . }}
 
 {{ partial "footer" . }}
