@@ -135,6 +135,17 @@ To change the logo of the crab to your own customised image,
 add `logoimage` to `config.toml`, where `logoimage` is the
 path inside your site's `static` directory.
 
+## Cover Images In Blogs
+Use cover and coverdesc in each markdown file's frontmatter to add 
+an image. cover sets the url and coverdesc sets the image's description.
+coverdesc is not required for embedding an image.
+Example:
+
++++
+cover = "http://randomname/CDE.png"
+coverdesc = "An image of a random thing"
++++
+
 ## Contact
 
 If you think anything could be improved about the Crab theme, feel
