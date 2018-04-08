@@ -72,7 +72,8 @@ mainSections = ["ABC", "XYZ"]
 ```
 
 By default, mainSections is set to use the `blog` folder and the 
-`features` folder in the exampleSite folder.
+`features` folder in the exampleSite folder set within the included 
+`config.toml`.
 
 ## Menus
 
