@@ -71,8 +71,8 @@ would look like this:
 mainSections = ["ABC", "XYZ"]
 ```
 
-By default, mainSections is set to use the `blog` folder and the 
-`features` folder set within the included `config.toml`.
+In the exampleSite folder, mainSections is set to use the `blog`
+folder and the `features` folder set within the included `config.toml`.
 
 ## Menus
 
