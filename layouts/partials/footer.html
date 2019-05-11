@@ -8,6 +8,13 @@
 
     </div>
 
+    <div id="cookieConsent">
+        <div id="closeCookieConsent">x</div>
+        This website is using cookies so we can deliver a better experience. <a href="https://cookiesandyou.com/" target="_blank">More info</a>. <a class="cookieConsentOK">I understand</a>
+    </div>
+
+    <script type="text/javascript" src="{{ .Site.BaseURL }}js/cookie_consent.js"></script>
+
     {{ if isset .Site.Params "google_analytics"}}
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.google_analytics}}"></script>

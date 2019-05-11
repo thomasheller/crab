@@ -12,6 +12,8 @@ site generator.
 - two-column
 - tag support
 - blog articles
+- Google analytics tag.
+- EU Cookies consent warning
 
 ## Preview
 
