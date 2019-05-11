@@ -8,8 +8,11 @@ description = "A clean Hugo theme for websites"
 # logoimage = "images/logo.jpg"
 # copyright = "foo"
 
+# google_analytics = "UA-xxxxxxx-X"
+## Uncomment if you have a google analytics tag and want to enable it.
+
 # mathjax = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-## Uncomment if you want mathjax enabled. The above cdn source is taken from https://gohugo.io/content-management/formats/#mathjax-with-hugo   
+## Uncomment if you want mathjax enabled. The above cdn source is taken from https://gohugo.io/content-management/formats/#mathjax-with-hugo
 
 
 
