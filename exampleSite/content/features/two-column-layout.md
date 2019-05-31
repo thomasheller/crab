@@ -1,5 +1,5 @@
 +++
-date = "2017-03-18T11:14:41+01:00"
+date = "2019-03-18T11:14:41+01:00"
 title = "Two-column layout"
 draft = false
 
