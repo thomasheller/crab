@@ -85,6 +85,10 @@ nav a:hover {
   color: #1da8be;
 }
 
+nav .current {
+  font-weight: bold;
+}
+
 #content,
 #footer,
 hr {

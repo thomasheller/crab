@@ -7,8 +7,6 @@
     <meta charset="utf-8">
     {{ hugo.Generator }}
 
-
-
     {{ if isset .Site.Params "mathjax"}}
     <script type="text/javascript" src="{{ .Site.Params.mathjax }}">
     </script>
@@ -34,7 +32,7 @@
 
       </div>
 
-      {{ partial "menu.html" .Site.Menus.main }}
+      {{ partial "menu.html" . }}
 
       <div id="content">
 
