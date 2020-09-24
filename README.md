@@ -78,9 +78,9 @@ If you put a shortcode like this at the beginning of your content
 file, the summary will appear in the right column:
 
 ```md
-{{% summary %}}
+{{< summary >}}
 This appears in the sidebar. *Markdown* is supported!
-{{% /summary %}}
+{{< /summary >}}
 ```
 
 ## Tags
