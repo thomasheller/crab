@@ -5,9 +5,9 @@ draft = false
 
 +++
 
-{{% summary %}}
+{{< summary >}}
 This is a an example contact page.
-{{% /summary %}}
+{{< /summary >}}
 
 Contact the website author:
 

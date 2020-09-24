@@ -5,7 +5,7 @@ draft = false
 
 +++
 
-{{% summary %}}
+{{< summary >}}
 This is what sidebar content looks like.
 
 Actually, this page has more info on:
@@ -13,7 +13,7 @@ Actually, this page has more info on:
 - alpha
 - beta
 - gamma
-{{% /summary %}}
+{{< /summary >}}
 
 Crab allows you to put content in a second column on the right-hand
 side of the page.
